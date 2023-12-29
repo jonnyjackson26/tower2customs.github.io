@@ -7,6 +7,13 @@ window.addEventListener('keydown', function(event) {
                 gameOver=false;
             }
             break;
+        case('touchstart'):
+            if(!gameOver) {
+                player.jump();
+            } else {
+                gameOver=false;
+            }
+            break;
         case('r'):
             resetGame();
             break;
