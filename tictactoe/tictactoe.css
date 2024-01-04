@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    text-align:center;
+    background-color: #eeeeb1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#board {
+    cursor:pointer;
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+.box {
+    color:brown;
+    background-color: blanchedalmond;
+    font-size:50px;
+    font-family: 'Brush Script MT', cursive;
+}
+.winning-box {
+    background-color: cadetblue;
+}
+
+#\30{
+    border-top-left-radius:25px;
+}
+#\31{
+    border-right:1px solid grey;
+    border-left:1px solid grey;
+}
+#\32{
+    border-top-right-radius:25px;
+}
+#\33{
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+}
+#\34{
+    border:1px solid grey;
+}
+#\35{
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+}
+#\36{
+    border-bottom-left-radius:25px;
+}
+#\37{
+    border-right:1px solid grey;
+    border-left:1px solid grey;
+}
+#\38{
+    border-bottom-right-radius:25px;
+}
