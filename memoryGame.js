@@ -107,27 +107,4 @@ function clickedBox() {
 
 
 
-/*For Options*/
-/* Grid Size */
-document.getElementById('submitOptions').addEventListener('click',() => {
-    let size=document.getElementById('gridSize').value;
-    rows=size;
-    cols=size;
-    //clear board
-    board.innerHTML='';
-    drawBoard();
-    boxesShowing=3;
-    resetGame();
-})
 
-/* theme buttons */
-document.getElementById('linenTheme').addEventListener('click',() => {
-    document.querySelector('body').style.backgroundColor='linen';
-    document.querySelector('h1').style.color='black';
-    document.querySelector('h3').style.color='black';
-    document.querySelector('p').style.color='black';
-    for(let i=0; i<document.getElementsByClassName('boxClass').length; i++) {
-        document.getElementsByClassName('boxClass')[i].style.backgroundColor='linen';
-        document.getElementsByClassName('boxClass')[i].style.border='1px solid black';
-    }
-})
